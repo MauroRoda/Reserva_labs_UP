@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="./solicitacao.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+</head>
+<body>
+       <section class="sessao-contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Solicitação de reserva</h1>
+                    <form>
+                    <div class="user">
+
+                        <!-- INICIO Tipo de solicitante -->
+                            <h3>Sou:</h3>
+                            <div>
+                                <input id="valorAl" class="field" type="radio" name="tipo-solicitante" required onclick="Aluno()">
+                            <span class="field"></span>
+                            Aluno.
+                            </div>
+                            
+                            <div>
+                                <input id="valorPf" class="field" type="radio" name="tipo-solicitante" required onclick="Professor()">
+                            <span class="field"></span>
+                            Professor.
+                            </div>
+                        <!-- FIM Tipo de solicitante -->
+                            
+                        <!-- INICIO Data da solicitação -->
+                            <div class="input-group">
+                                <label for="data" class="field-label">Data desejada</label>
+                                <input type="date" class="field" id="DATA" required>
+                            </div>
+                        <!-- FIM Data da solicitação -->
+
+                        <!-- INICIO PERIODO -->
+                        <h3>Periodo:</h3>
+                        <div>
+                            <input class="field" type="radio" name="periodo" required>
+                        <span class="field"></span>
+                        Manhã.
+                        </div>
+                        
+                        <div>
+                            <input class="field" type="radio" name="periodo" required>
+                        <span class="field"></span>
+                        Tarde.
+                        </div>
+
+                        <div>
+                            <input class="field" type="radio" name="periodo" required>
+                        <span class="field"></span>
+                        Noite.
+                        </div>
+                    </div>
+                        <!-- FIM PERIODO -->
+
+                        
+                        
+                        <div class="input-group" id="NomeSolicitante">
+                            <label id="title-nome" for="Nome" class="field-label">Nome do Solicitante</label>
+                            <input id="Nome-solicitante" type="text" class="field"  placeholder="Nome." required>
+                        </div>
+
+                        <div class="input-group" id="dados">
+                            <label id="title-RGM" for="RGM" class="field-label">Seus dados</label>
+                            <input id="RGM-Numero" type="number" class="field"  placeholder="Informe seu RGM ou CPF" required>
+                        </div>
+
+                        <div class="input-group" id="Professor">
+                            <label id="title-Nome-prof" for="prof.Responsavel" class="field-label">Prof.Responsavel</label>
+                            <input id="NomeProf" type="text" class="field"  placeholder="Nome." required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="e-mail" class="field-label">Seu E-mail</label>
+                            <input type="email" class="field" id="e-mail" placeholder="E-mail para retornaremos o contato" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                            <textarea class="field" id="mensagem" placeholder="Detalhes sobre a reserva..." required></textarea>
+                        </div>
+                        <button class="btn" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+           
+       </section>
+    <script src="./solicitacao.js"></script>
+</body>
+</html>
