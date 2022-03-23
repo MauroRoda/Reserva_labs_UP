@@ -13,19 +13,20 @@
                 <div class="contato-left"></div>
                 <div class="contato-right">
                     <h1>Solicitação de reserva</h1>
-                    <form>
+                    <!-- O comando (action) no form faz o envio da mensagem para o e-mail, conforme formsubmit "o comando deve ser corrigido"-->
+                    <form action="https://formsubmit.co/mauro_r_gomes@hotmail.com" method="POST">
                     <div class="user">
 
                         <!-- INICIO Tipo de solicitante -->
                             <h3>Sou:</h3>
                             <div>
-                                <input id="valorAl" class="field" type="radio" name="tipo-solicitante" required onclick="Aluno()">
+                                <input id="opcao" class="field" type="radio" name="tipo-solicitante" required onclick="Aluno()">
                             <span class="field"></span>
                             Aluno.
                             </div>
                             
                             <div>
-                                <input id="valorPf" class="field" type="radio" name="tipo-solicitante" required onclick="Professor()">
+                                <input id="opcao" class="field" type="radio" name="tipo-solicitante" required onclick="Professor()">
                             <span class="field"></span>
                             Professor.
                             </div>
@@ -62,20 +63,18 @@
 
                         
                         
-                        <div class="input-group" id="NomeSolicitante">
-                            <label id="title-nome" for="Nome" class="field-label">Nome do Solicitante</label>
-                            <input id="Nome-solicitante" type="text" class="field"  placeholder="Nome." required>
+                        <div class="input-group" id="CriaDiv">
                         </div>
 
-                        <div class="input-group" id="dados">
+                        <!-- <div class="input-group" id="dados">
                             <label id="title-RGM" for="RGM" class="field-label">Seus dados</label>
                             <input id="RGM-Numero" type="number" class="field"  placeholder="Informe seu RGM ou CPF" required>
                         </div>
 
                         <div class="input-group" id="Professor">
-                            <label id="title-Nome-prof" for="prof.Responsavel" class="field-label">Prof.Responsavel</label>
+                            <label id="title-Nome" for="prof.Responsavel" class="field-label">Prof.Responsavel</label>
                             <input id="NomeProf" type="text" class="field"  placeholder="Nome." required>
-                        </div>
+                        </div> -->
 
                         <div class="input-group">
                             <label for="e-mail" class="field-label">Seu E-mail</label>
@@ -87,6 +86,7 @@
                             <textarea class="field" id="mensagem" placeholder="Detalhes sobre a reserva..." required></textarea>
                         </div>
                         <button class="btn" type="submit">Enviar</button>
+
                     </form>
                 </div>
             </div>
